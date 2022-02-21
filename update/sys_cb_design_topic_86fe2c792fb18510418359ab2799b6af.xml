@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_design_topic">
+    <sys_cb_design_topic action="INSERT_OR_UPDATE">
+        <compiled_topic display_value="_PRVW__42feacf50bb18510f25e71eec9952595">cefeacf52fb18510418359ab2799b699</compiled_topic>
+        <design_definition>{"type":"FlowTopic","triggers":[{"type":"Trigger","name":"4f2738fc648d4b01ae5ccdbc709e59e5","triggerType":"request","applicability":{"type":"Applicability","mode":"script","value":"true"},"id":"4f2738fc648d4b01ae5ccdbc709e59e5"}],"goals":[{"name":"primary","trigger_id":"4f2738fc648d4b01ae5ccdbc709e59e5","nodes":[{"type":"StartGoal","goal_id":"primary","greeting_msg":{"type":"String","mode":"string","value":"gs.getMessageLang(\"I can help you find and update NeedIt records for a type of request.\", vaContext.getRequesterLang())"},"id":"40d8042240924b408a94a48f4f14fed1","name":"Start"},{"type":"TerminateGoal","goal_id":"primary","confirmation_msg":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Ask again when you need to update other NeedIt records.\", vaContext.getRequesterLang())"},"id":"a59fc107755a4308a7275b9262d90413","name":"End"},{"type":"ChoiceInputPrompt","expression_mode":"simple","metadataScript":"","cardName":"","cardFields":[],"id":"ca850da829a54bf4bb10eff37b8c1480","name":"NeedIt Type","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"variable_id":"dbf7b9d678c84734bb2189643cce8b36","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Which type of NeedIt record would you like to view?\", vaContext.getRequesterLang())"},"skippable":{"type":"Applicability","mode":"script","value":"false"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true}}],"edges":[{"type":"Edge","source_node_id":"40d8042240924b408a94a48f4f14fed1","target_node_id":"ca850da829a54bf4bb10eff37b8c1480","id":"315d1d8a1353489bb5a076f4fcc6db56"},{"type":"Edge","source_node_id":"ca850da829a54bf4bb10eff37b8c1480","target_node_id":"a59fc107755a4308a7275b9262d90413","id":"3375d2661231440e991ee56a31ad49f1"}],"id":"primary"}],"script_variables":[{"type":"String","name":"LiveAgent_application","value":{"type":"String","mode":"string"},"list":false,"id":"85fb5aa8dccc4dc58509a8f21d0c855e","formatType":"text","secure":false,"sensitive":false}],"glide_variables":[{"type":"Reference","table":"sys_user","id":"current-user","name":"user","formatType":"text","secure":false,"sensitive":false,"list":false},{"type":"Choice","choices":[{"name":"Legal","element":"legal"},{"name":"Facilities","element":"facilities"},{"name":"Human Resources","element":"human resources"}],"id":"dbf7b9d678c84734bb2189643cce8b36","name":"needit_type","formatType":"text","secure":false,"sensitive":false,"list":false}],"applicability":{"type":"Applicability","mode":"script","value":"true"},"roles":[],"scope":"6ead8e780f603200cd674f8ce1050ed1","domain":"global","topic_type":"STANDARD","channels":[],"id":"41e628712fb18510418359ab2799b64f","name":"_PRVW__42feacf50bb18510f25e71eec9952595","key_phrases":["Update NeedIt Records"],"nlu_provider":"","nlu_model":"","nlu_model_label":"","nlu_intent":"","nlu_intent_label":"","flexible_conversation_switching":false,"autopilot_topic":false,"design_categories":[{"name":null,"visible":false,"sysId":"58ac14ad2f714510418359ab2799b6f4"}],"triggerable_by_notification":false,"library":false,"nluMapping":"[]"}</design_definition>
+        <design_topic_id>41e628712fb18510418359ab2799b64f</design_topic_id>
+        <name>_PRVW__42feacf50bb18510f25e71eec9952595</name>
+        <sys_class_name>sys_cb_design_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-21 09:27:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>86fe2c792fb18510418359ab2799b6af</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FlowTopic</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_cb_design_topic_86fe2c792fb18510418359ab2799b6af</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-21 09:27:32</sys_updated_on>
+        <type>FlowTopic</type>
+    </sys_cb_design_topic>
+</record_update>
